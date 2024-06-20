@@ -6,7 +6,7 @@ class Solution{
     long long sumOfDivisors(int N)
     {
         // Write Your Code here
-        long long res = 0;
+        /*long long res = 0;
         long long sum = 0;
         
         for(int i=1;i<=N;i++){
@@ -21,6 +21,15 @@ class Solution{
             res += sum;
             sum = 0;
         }
+        return res;*/
+        long long res = 0;
+        
+        // Iterate over each number from 1 to N
+        for (int i = 1; i <= N; ++i) {
+            // Each number i is a divisor of its multiples
+            res += i * (N / i);
+        }
+
         return res;
     }
     /*vector<int> VecDiv(int N){
