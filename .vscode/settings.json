@@ -5,6 +5,7 @@
         "stack": "cpp",
         "vector": "cpp",
         "iostream": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "unordered_map": "cpp"
     }
 }
