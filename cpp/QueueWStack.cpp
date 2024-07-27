@@ -1,4 +1,4 @@
-class MyQueue {
+/*class MyQueue {
 public:
     stack<int> s1 , s2;
     MyQueue() {
@@ -32,9 +32,9 @@ public:
     bool empty() {
         return s2.empty();
     }
-};
+};*/
 
-/*
+
 class MyQueue {
 public:
     stack<int> s1 , s2;
@@ -81,4 +81,3 @@ public:
         return s1.empty();
     }
 };
-*/
