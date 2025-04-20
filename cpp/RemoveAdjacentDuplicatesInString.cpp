@@ -26,6 +26,10 @@ class Solution {
     };
 
     // Better optimised Version - Using string as stack
+    // the string operation that can be used to act like a stack are 
+    // s.push_back() --> to push an element
+    // s.back() --> top/peek
+    // s.pop_back() --> to pop an element
 
     class Solution {
         public:
