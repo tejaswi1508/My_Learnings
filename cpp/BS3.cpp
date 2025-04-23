@@ -1,5 +1,6 @@
 int findFloor(vector<int>& a,int n, int x){
-	int low = 0, high = n-1;
+	int low = 0;
+	int high = n-1;
 	int ans = -1;
 	while(low<=high){
 		int mid = (low+high)/2;
