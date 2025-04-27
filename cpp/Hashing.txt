@@ -1,0 +1,10 @@
+***Hashing And Password Security***
+
+I have learned something about hashing today. Even though i knew hashing will be used
+for storing passwords i used to doubt even if they store they cant retrieve and that was true
+We cant retrive back the password but everytime the user enters the pasword the hash remains the same
+So without exposing the password in the database we simply store the hash. 
+Now to make it even more secure they will add salt to the passwords that is adding some extra string 
+to the passowrd and then storing that hash as passsword.
+This not only secures the password but also Helps in handling people with same passwords
+as the passwords will be different when added some salt.
