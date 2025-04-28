@@ -17,3 +17,24 @@ class Solution {
             return true;
         }
     };
+
+// Further Optimised Solution using a singe array and single pass
+
+class Solution {
+    public:
+        bool isAnagram(string s, string t) {
+            int hash1[26] = {0};
+            int n = s.size();
+            int m = t.size();
+            if(n!= m) return false;
+    
+            for(int i=0;i<n;i++){
+                hash1[s[i]-'a']++;
+                hash1[t[i]-'a']--;
+            }
+            for(int count : hash1){
+                if(count != 0) return false;
+            }
+            return true;
+        }
+    };
