@@ -1,3 +1,4 @@
+//KidsCandies
 class Solution {
     public:
         int maximum(vector<int>& candies){
