@@ -1,7 +1,7 @@
 Node* segregate(Node *head) {
     
-    // Add code here
-    if (!head) return head;  // Handle empty list case
+    
+    if (!head) return head; 
 
     Node* zeroHead = nullptr;
     Node* onesHead = nullptr;
