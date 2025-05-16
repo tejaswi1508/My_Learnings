@@ -27,7 +27,7 @@ vector<string> Largest_good(string& binStr){
 
     return newStr;
 }
-
+/*
 int main(){
     string binString = "110001";
     vector<string> ans = Largest_good(binString);
@@ -36,3 +36,4 @@ int main(){
     }
     return 0;
 }
+*/
