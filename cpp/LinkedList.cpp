@@ -5,7 +5,16 @@ void insertAtHead(Node* &head,int val){
 }
 
 //Insert at tail
+Node* insertAtTail(Node* &head,int val){
+    Node* newNode = new Node(val);
+    if(head == nullptr) return newNode;
 
+    while(temp->next!=nullptr){
+        temp = temp ->next;
+    }
+    temp->next = newNode;
+    return head;
+}
 
 class Node {
     public:
