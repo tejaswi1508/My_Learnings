@@ -16,6 +16,17 @@ Node* insertAtTail(Node* &head,int val){
     return head;
 }
 
+//Length of the linkedlist
+int LengthOfLL(Node* &head){
+    int count=0;
+    Node* temp = head;
+    while(temp != nullptr){
+        count++;
+        temp = temp->next;
+    }
+    return count;
+}
+
 class Node {
     public:
         int data;         // Data stored in the node
