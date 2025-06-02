@@ -1,0 +1,48 @@
+Hi today I read about compilers , although we know that compiler translates our code to machine language(binary)
+I just saw what all does this compiler do and heres everything i learned about it:
+
+Compiler is a program(software) that translated code written in high-level language 
+(like c,c++,java) into machine code(binary) that a computer hardware(cpu) can understand and execute.
+
+### How Does a Compiler Work?
+It usually works in multiple phases, like this:
+
+1. Lexical Analysis
+Breaks your code into tokens (like keywords, variables, operators).
+
+2. Syntax Analysis (Parsing)
+Checks if your code follows the grammar of the language.
+Eg: Detects if semicolons or braces are missing.
+
+3. Semantic Analysis
+Checks for meaning: like type correctness (int x = "hello"; is wrong).
+
+4. Intermediate Code Generation
+Creates a simplified form of code for optimization.
+
+5. Optimization
+Improves the intermediate code to run faster or use less memory.
+
+6. Code Generation
+Converts to machine code (binary or assembly) specific to your CPU.
+
+7. Linking
+Combines compiled code with libraries or other compiled files.
+
+
+### So What is the Compiler "Designed" With?
+Compilers are written in programming languages themselves!
+
+Example: GCC (GNU C Compiler) is written in C.
+
+Uses data structures (trees, symbol tables, etc.) and algorithms (for optimization, parsing, etc.)
+
+Often involves finite automata, grammars (like context-free grammars), 
+and formal language theory — concepts from compiler design courses.
+
+| Language | Compiler                                                           |
+| -------- | ------------------------------------------------------------------ |
+| C        | `gcc`, `clang`                                                     |
+| C++      | `g++`, `clang++`                                                   |
+| Java     | `javac`                                                            |
+| Python   | (Interpreted mostly, but can be compiled with tools like `Cython`) |
