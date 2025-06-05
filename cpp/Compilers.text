@@ -40,3 +40,9 @@ Uses data structures (trees, symbol tables, etc.) and algorithms (for optimizati
 Often involves finite automata, grammars (like context-free grammars), 
 and formal language theory — concepts from compiler design courses.
 
+| Language | Compiler                                                           |
+| -------- | ------------------------------------------------------------------ |
+| C        | `gcc`, `clang`                                                     |
+| C++      | `g++`, `clang++`                                                   |
+| Java     | `javac`                                                            |
+| Python   | (Interpreted mostly, but can be compiled with tools like `Cython`) |
