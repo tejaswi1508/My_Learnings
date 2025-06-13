@@ -13,3 +13,24 @@ public:
         return newArr;
     }
 };
+
+//improvised version
+class Solution {
+public:
+    vector<int> shuffle(vector<int>& nums, int n) {
+        // Encode two numbers into one element
+        for (int i = 0; i < n; ++i) {
+            nums[i] |= (nums[n + i] << 10);
+        }
+
+        // Decode and rearrange
+        for (int i = n - 1; i >= 0; --i) {
+            int y = nums[i] >> 10;
+            int x = nums[i] & 1023; // Mask to get original lower 10 bits
+            nums[2 * i] = x;
+            nums[2 * i + 1] = y;
+        }
+
+        return nums;
+    }
+};
